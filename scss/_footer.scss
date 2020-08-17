@@ -1,0 +1,169 @@
+footer {
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $color-grayblack;
+ }
+  
+  .tienda footer, .blog footer, .nosotrxs footer {
+    background-color: #fff; }
+  
+  .pie_pagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0.5rem 1rem;
+    margin: 0;
+    border-bottom: solid 1px  $color-graywhite; }
+  
+  .tienda .pie_pagina, .blog .pie_pagina, .nosotrxs .pie_pagina {
+    border-bottom: solid 1px  $color-grayblack; }
+  
+  .titulo_footer {
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    color: $color-graywhite; }
+  
+  .tienda .titulo_footer, .blog .titulo_footer, .nosotrxs .titulo_footer {
+    color: $color-grayblack; }
+  
+  footer input {
+    font-size: 0.8rem; }
+  
+  .contacto footer {
+    background-color: #000; }
+  
+  input {
+    color: $color-grayblack;
+    background-color: #fff;
+    border-color: $color-grayblack; }
+  
+  .home input {
+    color: $color-graywhite;
+    background-color: $color-grayblack;
+    border-color: $color-graywhite; }
+  
+  .contacto footer input {
+    color: #fff;
+    background-color: #000;
+    border-color: #fff; }
+  
+  .ul_footer {
+    line-height: 2;
+    font-weight: 500;
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+    display: inline-flex;
+    & li{
+      margin-right: 1.8rem;
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 0; 
+    }
+    & a {
+      padding: 0.5rem;
+      color: $color-grayblack; } 
+    & a:hover {
+      text-decoration: none;
+      color: $color-graywhite; 
+      background-color: $color-grayblack;} 
+  }
+
+  .home footer a {
+    color: $color-graywhite;}
+
+    .home .ul_footer a:hover{
+      color: $color-grayblack;
+      background-color: $color-graywhite;
+    }  
+  
+  .contacto footer a {
+    color: #fff;}
+
+  .contacto .ul_footer a:hover{
+      color: $color-grayblack;
+      background-color: #fff;}  
+  
+  .footerp {
+    margin: 0.5rem 0 0 1rem;
+    padding: 0;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: $color-graywhite;
+    text-align: left; }
+  
+  .tienda .footerp, .blog .footerp, .nosotrxs .footerp {
+    color: $color-grayblack; }
+    
+@media only screen and (max-width: 320px) {
+    .pie_pagina {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;}
+    .ul_footer {
+        display: none; }
+    footer form{
+      display: none;
+    }
+    .titulo_footer{
+      display:none;
+    }     
+    footer a{
+      padding:0;
+      }
+    }
+
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .pie_pagina {
+        padding-bottom: 0.85rem; }
+      ul {
+        margin-bottom: 0; }
+      li {
+        font-size: 0.7rem;
+        margin-right: 1rem; }
+      .titulo_footer {
+        display:none;}
+      footer form {
+        display: none; }
+      .redes{
+        position: relative;
+        left: -2rem;
+        margin-top: 0.7rem;;
+        & img{
+          margin-right: 2rem;;
+        }
+      }  
+      footer input {
+        font-size: 0.8rem; }
+      .footerp {
+        margin:0.5rem 0 0 1rem;
+        font-size: 0.6rem; }
+      footer li {
+        font-size: 0.7rem; }
+      .ul_footer {
+        margin-bottom: 0; }
+      .ul_footer li {
+        margin-right: 1.8rem; } }
+
+/*home*/
+.home footer {
+    grid-area: footer;}
+
+/*tienda*/
+.tienda footer {
+    grid-area: tiendafooter; }
+
+/*nosotrxs*/
+.nosotrxs footer {
+    grid-area: footer; }
