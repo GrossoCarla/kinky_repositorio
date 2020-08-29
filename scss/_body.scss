@@ -118,11 +118,14 @@ body {
     &____article-izq {
       padding-top: 1rem; }
     &__aviso {
-      font-size: 0.9rem; }  
+      font-size: 0.9rem; }
     &____link {
-      font-size: 1.3rem; } 
-    &__encabezado h1{
-      font-size: 3rem; }   
+      font-size: 1.3rem; }
+    &__encabezado {
+      margin-left: 1rem;   
+    & h1 {
+      font-size: 3rem; }
+    }   
   }
 }
 
@@ -134,8 +137,7 @@ body {
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   #kinky {
-    width: $width -6;
-    margin-left: 1rem; }
+    width: 98%;}
 }
 
 
