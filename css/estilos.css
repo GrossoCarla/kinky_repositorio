@@ -332,7 +332,7 @@ select {
   grid-template-columns: 50% 50%; }
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .contenedortienda {
-      padding: 8rem 2rem 6rem 2rem; } }
+      padding: 8rem 2rem 3rem 2rem; } }
   .contenedortienda__promomovil {
     z-index: 2;
     position: relative;
@@ -359,6 +359,12 @@ select {
     justify-content: center;
     transform: rotate(-25deg);
     opacity: 1; }
+    @media only screen and (max-width: 320px) {
+      .contenedortienda__desc {
+        height: 100px;
+        width: 100px;
+        left: 9rem;
+        bottom: 6rem; } }
     @media only screen and (min-width: 321px) and (max-width: 768px) {
       .contenedortienda__desc {
         left: 10rem;
@@ -463,6 +469,9 @@ select {
   color: #363636;
   animation-name: bounceIn;
   animation-duration: 1s; }
+  @media only screen and (max-width: 320px) {
+    .animate__bounceIn {
+      margin-left: 1.5rem; } }
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .animate__bounceIn {
       font-size: 4rem;
@@ -476,9 +485,13 @@ select {
   text-transform: uppercase;
   margin: 0;
   padding-top: 1rem; }
+  @media only screen and (max-width: 320px) {
+    .tienda h3 {
+      font-size: 0.7rem;
+      margin-left: 1.5rem; } }
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .tienda h3 {
-      font-size: 1rem; } }
+      font-size: 0.9rem; } }
 
 .tienda h4 {
   font-family: "Comfortaa", cursive;
@@ -494,6 +507,9 @@ select {
   animation-duration: 0.5s;
   animation-delay: 0s;
   animation-iteration-count: infinite; }
+  @media only screen and (max-width: 320px) {
+    .tienda h4 {
+      display: none; } }
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .tienda h4 {
       font-size: 1rem;
@@ -512,9 +528,13 @@ select {
   font-size: 3rem;
   padding: 0;
   letter-spacing: 0.1rem; }
-  @media only screen and (min-width: 321px) and (max-width: 768px) {
+  @media only screen and (max-width: 320px) {
     .tienda h5 {
       font-size: 2rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .tienda h5 {
+      font-size: 2rem;
+      letter-spacing: 0; } }
 
 .tienda h6 {
   margin: 0 auto;
@@ -523,6 +543,9 @@ select {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.7rem; }
+  @media only screen and (max-width: 320px) {
+    .tienda h6 {
+      font-size: 0.5rem; } }
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .tienda h6 {
       font-size: 0.6rem; } }
@@ -558,7 +581,8 @@ select {
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   .medios p {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem;
+    margin: 1.5rem 0 0 0; } }
 
 @media only screen and (max-width: 320px) {
   .animate__bounceIn {

@@ -156,7 +156,7 @@ body {
     display: grid;
     grid-template-columns: $width/2 $width/2;
     @media only screen and (min-width: 321px) and (max-width: 768px){
-      padding: 8rem 2rem 6rem 2rem;}
+      padding: 8rem 2rem 3rem 2rem;}
     &__promomovil {
       z-index: 2;
       position: relative;
@@ -184,6 +184,12 @@ body {
       justify-content: center;
       transform: rotate(-25deg);
       opacity: 1; 
+      @media only screen and (max-width: 320px){
+        height: 100px;
+        width: 100px;
+        left: 9rem;
+        bottom: 6rem;  
+      }
       @media only screen and (min-width: 321px) and (max-width: 768px){
         left: 10rem;
         bottom: 8rem;
@@ -293,6 +299,8 @@ body {
     color: $color-grayblack;
     animation-name: bounceIn;
     animation-duration: 1s; 
+    @media only screen and (max-width: 320px){
+    margin-left: 1.5rem;}  
     @media only screen and (min-width: 321px) and (max-width: 768px){
       font-size: 4rem;
       line-height: 4rem; 
@@ -306,9 +314,12 @@ body {
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0;
-    padding-top: 1rem; 
+    padding-top: 1rem;
+    @media only screen and (max-width: 320px){
+      font-size: 0.7rem;
+      margin-left: 1.5rem;}  
     @media only screen and (min-width: 321px) and (max-width: 768px){
-      font-size: 1rem;
+      font-size: 0.9rem;
     }}
   
   .tienda h4 {
@@ -324,7 +335,10 @@ body {
     animation-name: latir;
     animation-duration: 0.5s;
     animation-delay: 0s;
-    animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;
+    @media only screen and (max-width: 320px){
+      display: none;
+    }  
     @media only screen and (min-width: 321px) and (max-width: 768px){
       font-size: 1rem;
       margin: 1rem 0 0 6rem;
@@ -345,9 +359,13 @@ body {
     color: $color-grayblack;
     font-size: 3rem;
     padding: 0;
-    letter-spacing: 0.1rem; 
+    letter-spacing: 0.1rem;
+    @media only screen and (max-width: 320px){
+      font-size: 2rem;   
+    } 
     @media only screen and (min-width: 321px) and (max-width: 768px){
       font-size: 2rem;
+      letter-spacing: 0;
     }}
   
   .tienda h6 {
@@ -356,7 +374,10 @@ body {
     color: $color-grayblack;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 0.7rem; 
+    font-size: 0.7rem;
+    @media only screen and (max-width: 320px){
+      font-size: 0.5rem;   
+    }  
     @media only screen and (min-width: 321px) and (max-width: 768px){
       font-size: 0.6rem;
     }}
@@ -397,6 +418,7 @@ body {
 .medios p{
   @media only screen and (min-width: 321px) and (max-width: 768px){
   font-size: 0.8rem;
+  margin: 1.5rem 0 0 0;  
   }
 }
 
