@@ -330,11 +330,17 @@ select {
   padding: 8rem 5rem 6rem 5rem;
   display: grid;
   grid-template-columns: 50% 50%; }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .contenedortienda {
+      padding: 8rem 2rem 6rem 2rem; } }
   .contenedortienda__promomovil {
     z-index: 2;
     position: relative;
     left: -500px;
     transition: left 0.5s; }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .contenedortienda__promomovil {
+        left: -300px; } }
   .contenedortienda__promomovil:hover {
     left: -85px; }
   .contenedortienda__desc {
@@ -353,6 +359,12 @@ select {
     justify-content: center;
     transform: rotate(-25deg);
     opacity: 1; }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .contenedortienda__desc {
+        left: 10rem;
+        bottom: 8rem;
+        height: 120px;
+        width: 120px; } }
   .contenedortienda__selects {
     font-family: "Comfortaa", cursive;
     font-size: 0.8rem;
@@ -360,43 +372,57 @@ select {
     width: 100%;
     grid-template-columns: 33% 33% 34%;
     margin-bottom: 1rem; }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .contenedortienda__selects {
+        font-size: 0.6rem; } }
   .contenedortienda__acciones {
     text-align: right;
     margin-right: 4rem; }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .contenedortienda__acciones {
+        margin-right: 2rem; } }
   .contenedortienda__covers {
     display: flex;
-    flex-direction: column;
-    background-color: #363636;
-    z-index: 3;
-    position: absolute;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    box-sizing: border-box;
-    padding: 1rem 1rem 1rem 1rem;
-    opacity: 0;
-    text-align: center; }
-  .contenedortienda__covers:hover {
-    opacity: 0.8; }
-  .contenedortienda__covers:hover.contenedortienda__covers li {
-    opacity: 1; }
-  .contenedortienda__covers:hover#actionProduct {
-    opacity: 1; }
-  .contenedortienda__covers li {
-    opacity: 0;
-    font-family: "Fredoka One", cursive;
-    color: #ebebeb;
-    background-color: #363636;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    list-style: none;
-    margin: 0.2rem 0 0 0; }
+    flex-direction: row;
+    width: 100%; }
+    .contenedortienda__covers__item {
+      background-color: #363636;
+      position: absolute;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      box-sizing: border-box;
+      padding: 1rem 1rem 1rem 1rem;
+      opacity: 0;
+      text-align: center; }
+      .contenedortienda__covers__item:hover {
+        opacity: 0.8; }
+      .contenedortienda__covers__item:hover.contenedortienda__covers__item li {
+        opacity: 1; }
+      .contenedortienda__covers__item:hover#actionProduct {
+        opacity: 1; }
+      .contenedortienda__covers__item li {
+        opacity: 0;
+        font-family: "Fredoka One", cursive;
+        color: #ebebeb;
+        background-color: #363636;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0.2rem 0 0 0; }
   .contenedortienda__productos {
     width: 31.2rem;
     height: 460px;
     overflow: auto;
     padding: 0;
     margin: 0; }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .contenedortienda__productos {
+        width: 23rem;
+        height: 250px; }
+        .contenedortienda__productos img {
+          width: 80px;
+          height: 80px; } }
   .contenedortienda__productos img {
     margin-bottom: 0.2rem; }
   @media only screen and (max-width: 320px) {
@@ -437,6 +463,11 @@ select {
   color: #363636;
   animation-name: bounceIn;
   animation-duration: 1s; }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .animate__bounceIn {
+      font-size: 4rem;
+      line-height: 4rem;
+      margin: 0 0 2rem 0; } }
 
 .tienda h3 {
   color: #363636;
@@ -445,6 +476,9 @@ select {
   text-transform: uppercase;
   margin: 0;
   padding-top: 1rem; }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .tienda h3 {
+      font-size: 1rem; } }
 
 .tienda h4 {
   font-family: "Comfortaa", cursive;
@@ -460,6 +494,10 @@ select {
   animation-duration: 0.5s;
   animation-delay: 0s;
   animation-iteration-count: infinite; }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .tienda h4 {
+      font-size: 1rem;
+      margin: 1rem 0 0 6rem; } }
 
 @keyframes latir {
   0% {
@@ -474,6 +512,9 @@ select {
   font-size: 3rem;
   padding: 0;
   letter-spacing: 0.1rem; }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .tienda h5 {
+      font-size: 2rem; } }
 
 .tienda h6 {
   margin: 0 auto;
@@ -482,6 +523,9 @@ select {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.7rem; }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .tienda h6 {
+      font-size: 0.6rem; } }
 
 #furry {
   background-color: #eee; }
@@ -511,6 +555,10 @@ select {
       margin-bottom: 2rem; }
       .medios img {
         width: 10%; } }
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .medios p {
+    font-size: 0.8rem; } }
 
 @media only screen and (max-width: 320px) {
   .animate__bounceIn {
