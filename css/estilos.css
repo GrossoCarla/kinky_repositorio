@@ -387,32 +387,34 @@ select {
     @media only screen and (min-width: 321px) and (max-width: 768px) {
       .contenedortienda__acciones {
         margin-right: 2rem; } }
-  .contenedortienda__covers {
+  .contenedortienda__productosflex {
     display: flex;
     flex-direction: row;
-    width: 100%; }
-    .contenedortienda__covers__item {
+    flex-wrap: wrap; }
+    .contenedortienda__productosflex__item {
+      position: relative; }
+    .contenedortienda__productosflex__cover {
       background-color: #363636;
       position: absolute;
       margin: 0 auto;
-      width: 150px;
-      height: 150px;
+      width: 100%;
+      height: 100%;
       box-sizing: border-box;
       padding: 1rem 1rem 1rem 1rem;
       opacity: 0;
       text-align: center; }
-      .contenedortienda__covers__item:hover {
+      .contenedortienda__productosflex__cover:hover {
         opacity: 0.8; }
-      .contenedortienda__covers__item:hover.contenedortienda__covers__item li {
+      .contenedortienda__productosflex__cover:hover.contenedortienda__productosflex__cover li {
         opacity: 1; }
-      .contenedortienda__covers__item:hover#actionProduct {
+      .contenedortienda__productosflex__cover:hover#actionProduct {
         opacity: 1; }
-      .contenedortienda__covers__item li {
+      .contenedortienda__productosflex__cover li {
         opacity: 0;
         font-family: "Fredoka One", cursive;
         color: #ebebeb;
         background-color: #363636;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
         list-style: none;
         margin: 0.2rem 0 0 0; }
