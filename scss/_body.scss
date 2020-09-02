@@ -720,6 +720,13 @@ body {
     }  
   }
   
+  .contenedor__gif{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+
   .staff {
     grid-area: staff;
     display: flex;
