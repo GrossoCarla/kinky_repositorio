@@ -847,7 +847,7 @@ select {
     .nosotrxs__h3 {
       font-size: 0.9rem;
       padding-bottom: 1rem;
-      margin: 0 2rem; } }
+      margin: 1rem 2rem 1rem 2rem; } }
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .nosotrxs__h3 {
       font-size: 1.5rem; } }
@@ -857,17 +857,24 @@ select {
   justify-content: center;
   margin-bottom: 5rem; }
 
+@media only screen and (max-width: 320px) {
+  #nosotrxsGif {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 1rem; } }
+
 .staff {
   grid-area: staff;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 0 4rem 3rem 4rem; }
+  padding: 0 6rem 3rem 6rem; }
   .staff__article {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 1rem; }
+    padding: 1rem;
+    margin: 0 1.3rem 0 1.3rem; }
   .staff__h4 {
     text-align: center;
     font-family: "Comfortaa", cursive; }
@@ -881,25 +888,29 @@ select {
     background-color: aquamarine;
     float: none;
     align-items: flex-start;
-    text-align: left; }
+    text-align: left;
+    font-size: 0.7rem;
+    text-decoration: none; }
   @media only screen and (max-width: 320px) {
     .staff {
       margin: 0 0.5rem 3rem;
-      padding: 0; }
+      padding: 0;
+      flex-direction: column;
+      align-items: center; }
       .staff__article {
-        width: 35%;
+        width: 11rem;
         padding: 0.5rem;
-        margin-bottom: 1rem; }
+        margin-bottom: 2rem; }
       .staff__h4 {
         font-size: 0.8rem;
         text-align: center; }
       .staff__ul li {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding: 0; }
       .staff__imagen {
-        margin-left: 10%;
-        width: 70px;
-        height: 70px; } }
+        margin-left: 20%;
+        width: 100px;
+        height: 100px; } }
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .staff {
       margin: 0 3.5rem 3rem;
@@ -914,8 +925,8 @@ select {
         font-size: 0.6rem;
         margin-right: 0; }
       .staff__imagen {
-        width: 90px;
-        height: 90px; } }
+        width: 125px;
+        height: 125px; } }
 
 footer {
   z-index: 1;
