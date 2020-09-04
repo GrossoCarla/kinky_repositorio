@@ -330,6 +330,26 @@ select {
   padding: 8rem 5rem 6rem 5rem;
   display: grid;
   grid-template-columns: 50% 50%; }
+  @media only screen and (max-width: 320px) {
+    .contenedortienda {
+      padding: 0;
+      margin: 7rem 0 0 0;
+      width: 320px;
+      display: grid;
+      grid-template-areas: "promocion" "tienda_y_selects";
+      grid-column: 100%; }
+      .contenedortienda__izq {
+        width: 320px;
+        grid-area: promocion;
+        padding-bottom: 4rem; }
+      .contenedortienda__selects {
+        width: 320px;
+        margin: 0; }
+      .contenedortienda__der {
+        width: 320px;
+        margin: 0;
+        padding: 0;
+        grid-area: tienda_y_selects; } }
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .contenedortienda {
       padding: 8rem 2rem 3rem 2rem; } }
@@ -338,6 +358,9 @@ select {
     position: relative;
     left: -500px;
     transition: left 0.5s; }
+    @media only screen and (max-width: 320px) {
+      .contenedortienda__promomovil {
+        left: 0px; } }
     @media only screen and (min-width: 321px) and (max-width: 768px) {
       .contenedortienda__promomovil {
         left: -300px; } }
@@ -384,6 +407,9 @@ select {
   .contenedortienda__acciones {
     text-align: right;
     margin-right: 4rem; }
+    @media only screen and (max-width: 320px) {
+      .contenedortienda__acciones {
+        margin: 0; } }
     @media only screen and (min-width: 321px) and (max-width: 768px) {
       .contenedortienda__acciones {
         margin-right: 2rem; } }
@@ -402,7 +428,16 @@ select {
       box-sizing: border-box;
       padding: 1rem 1rem 1rem 1rem;
       opacity: 0;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 0.2rem; }
+      @media only screen and (max-width: 320px) {
+        .contenedortienda__productosflex__cover {
+          padding: 0.5rem;
+          margin-bottom: 0.2rem; } }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .contenedortienda__productosflex__cover {
+          padding: 0.7rem 1rem 1rem 1rem;
+          margin-bottom: 0.2rem; } }
       .contenedortienda__productosflex__cover:hover {
         opacity: 0.8; }
       .contenedortienda__productosflex__cover:hover.contenedortienda__productosflex__cover li {
@@ -418,12 +453,28 @@ select {
         text-transform: uppercase;
         list-style: none;
         margin: 0.2rem 0 0 0; }
+        @media only screen and (max-width: 320px) {
+          .contenedortienda__productosflex__cover li {
+            font-size: 0.7rem; } }
+        @media only screen and (min-width: 321px) and (max-width: 768px) {
+          .contenedortienda__productosflex__cover li {
+            font-size: 0.6rem;
+            margin: 0; } }
   .contenedortienda__productos {
     width: 31.2rem;
     height: 460px;
     overflow: auto;
     padding: 0;
     margin: 0; }
+    @media only screen and (max-width: 320px) {
+      .contenedortienda__productos {
+        width: 300px;
+        margin: 0;
+        padding: 1rem;
+        height: 278px; }
+        .contenedortienda__productos img {
+          width: 85px;
+          height: 85px; } }
     @media only screen and (min-width: 321px) and (max-width: 768px) {
       .contenedortienda__productos {
         width: 23rem;
@@ -433,34 +484,6 @@ select {
           height: 80px; } }
   .contenedortienda__productos img {
     margin-bottom: 0.2rem; }
-  @media only screen and (max-width: 320px) {
-    .contenedortienda {
-      padding: 0;
-      margin: 9rem 0 0 0;
-      width: 320px;
-      display: grid;
-      grid-template-areas: "promocion" "tienda_y_selects";
-      grid-column: 100%; }
-      .contenedortienda__izq {
-        width: 260px;
-        grid-area: promocion;
-        padding-bottom: 2rem; }
-      .contenedortienda__selects {
-        width: 320px; }
-      .contenedortienda__der {
-        width: 320px;
-        margin: 0;
-        padding: 0;
-        width: 90%;
-        grid-area: tienda_y_selects; }
-      .contenedortienda__productos {
-        width: 320px;
-        margin: 0;
-        padding: 0;
-        height: 165px; }
-      .contenedortienda__productos img {
-        width: 80px;
-        height: 80px; } }
 
 .animate__bounceIn {
   font-family: "Fredoka One", cursive;
@@ -557,9 +580,19 @@ select {
 
 #filtros, #filtros2 {
   margin-right: 0.5rem; }
+  @media only screen and (max-width: 320px) {
+    #filtros, #filtros2 {
+      margin-right: 0rem;
+      margin-left: 1rem;
+      font-size: 0.6rem;
+      width: 82%; } }
 
 #carrito {
   margin-right: 1rem; }
+  @media only screen and (max-width: 320px) {
+    #carrito {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem; } }
 
 #actionProduct {
   font-size: 0.7rem;
@@ -567,6 +600,14 @@ select {
   padding: 0;
   text-align: center;
   font-family: "Comfortaa", cursive; }
+  @media only screen and (max-width: 320px) {
+    #actionProduct {
+      font-size: 0.5rem;
+      margin: 0.5rem 0 0 0; } }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    #actionProduct {
+      font-size: 0.4rem;
+      margin: 0.5rem 0 0 0; } }
 
 .medios {
   display: flex;
@@ -574,17 +615,22 @@ select {
   flex-wrap: wrap; }
   .medios p {
     margin: 1rem 0 0 0; }
+    @media only screen and (max-width: 320px) {
+      .medios p {
+        font-size: 0.7rem;
+        margin: 1rem 0 0.5rem 0; } }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .medios p {
+        font-size: 0.8rem;
+        margin: 1.5rem 0 0 0; } }
   @media only screen and (max-width: 320px) {
     .medios {
       width: 320px;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      padding-right: 2rem;
+      padding-left: 1rem; }
       .medios img {
         width: 10%; } }
-
-@media only screen and (min-width: 321px) and (max-width: 768px) {
-  .medios p {
-    font-size: 0.8rem;
-    margin: 1.5rem 0 0 0; } }
 
 @media only screen and (max-width: 320px) {
   .animate__bounceIn {
@@ -598,6 +644,10 @@ select {
     width: 90%; }
   .tienda h4 {
     margin: 0; } }
+
+@media only screen and (max-width: 320px) {
+  .tienda #lupa {
+    margin-left: 2rem; } }
 
 /*Página blog*/
 .container {
