@@ -766,7 +766,7 @@ select {
 .contacto {
   width: 100%;
   background-repeat: no-repeat;
-  background-color: #363636;
+  background-image: url("../imagenes/contacto_background.jpg");
   background-size: cover; }
 
 .contenedorcontacto {
@@ -941,6 +941,9 @@ select {
     text-align: left;
     font-size: 0.7rem;
     text-decoration: none; }
+    .staff__ul li a {
+      text-decoration: none;
+      color: #363636; }
   @media only screen and (max-width: 320px) {
     .staff {
       margin: 0 0.5rem 3rem;

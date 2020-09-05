@@ -613,9 +613,8 @@ body {
 .contacto {
     width: 100%;
     background-repeat: no-repeat;
-    background-color: $color-grayblack;
+    background-image: url("../imagenes/contacto_background.jpg");
     background-size: cover; }
-
 
 .contenedorcontacto {
     display: flex;
@@ -815,7 +814,11 @@ body {
       align-items: flex-start;
       text-align: left;
       font-size: 0.7rem;
-      text-decoration: none; 
+      text-decoration: none;
+    & a{
+      text-decoration: none;
+      color: $color-grayblack;
+    }   
     }
 
     @media only screen and (max-width: 320px) {
