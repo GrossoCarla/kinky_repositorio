@@ -536,7 +536,7 @@ body {
       &__texto-higiene {
         top: -140px;
         margin-left: 0.5rem;
-        color: white; }
+        color: white; 
       &__higiene-p {
         display: none; }
       &__img1 {
@@ -567,6 +567,27 @@ body {
     }        
   }
   
+  @media only screen and (min-width: 321px) and (max-width: 768px){
+    .container__texto-higiene p{
+      font-size: 0.7rem;}
+    .container__img1{
+        padding: 0;
+        height: 17rem;}
+    .container__h3{
+      font-size: 1.2rem;}
+    .container__h4{
+      font-size: 1rem;}
+    .container__img2 {
+        height: 11.5rem;
+        width: 11rem;
+        margin-bottom: 1rem;}
+    span {
+      font-size: 0.8rem;}
+    .pagination_nav {
+      margin-bottom: 2rem;
+    }             
+    }
+
   /*Section 1*/
 
   .blog span {
@@ -861,4 +882,4 @@ body {
       }          
     }        
   }
-
+}
