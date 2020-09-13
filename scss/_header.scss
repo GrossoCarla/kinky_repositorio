@@ -20,12 +20,20 @@
         margin-left: 2rem;
         margin-right: 3rem;
         float: left; 
-        list-style: none; }
+        list-style: none; 
+        @media only screen and (max-width: 320px){
+          margin: 0;
+        }
+      }
       & a {
         padding: 0.5rem;
         text-decoration: none;
         text-transform: uppercase;
-        color: $color-grayblack; }
+        color: $color-grayblack; 
+        @media only screen and (max-width: 320px){
+          box-sizing: border-box;
+          padding: 1rem 2rem;}
+        }
       & li a:hover {
         background-color: $color-grayblack;
         text-decoration: none;
@@ -69,10 +77,17 @@
     left: 133%;
     content: 'I'; }
   
+
   .tienda .seleccionado, .blog .seleccionado, .nosotrxs .seleccionado {
     background-color: $color-grayblack;
     color: $color-graywhite; 
-    padding: 0.5rem; }
+    padding: 0.5rem; 
+    @media only screen and (max-width: 320px) {
+      color: $color-pink;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 1rem 2rem;} 
+    }
 
   /*submenu*/
   .sub_menu {
@@ -138,7 +153,9 @@
         .home .navlist__1 a {
             color: $color-grayblack; }
         .home .navlist {
-            background-color: $color-grayblack; }}    
+            background-color: $color-grayblack; }
+     
+        }    
      
 @media only screen and (min-width: 321px) and (max-width: 768px) {
     .navlist {
@@ -169,6 +186,18 @@
 .tienda nav {
     grid-area: "tiendanav"; }
 
+    @media only screen and (max-width: 320px){
+      .tienda .navlist__1{
+        background-color: #fff;}
+    }
+
+/*blog*/
+@media only screen and (max-width: 320px){
+  .blog .navlist__1{
+    background-color: #fff;}
+}
+
+
 /*contacto*/
 .contacto .navlist {
     background-color: #000; }
@@ -179,7 +208,13 @@
         
 .contacto .seleccionado {
     background-color: #fff; 
-    color: #000; }
+    color: #000; 
+    @media only screen and (max-width: 320px){
+      color: $color-pink;
+      background-color: #000;
+      box-sizing: border-box;
+      padding: 1rem 2rem;
+    } }
 
 .contacto .sub_menu li {
     background-color: #fff; }
@@ -194,6 +229,10 @@
     background-color: #fff; 
     color: #000; }
 
+    @media only screen and (max-width: 320px){
+      .contacto .navlist__1 {
+        background-color: #000; } 
+    }
       
 /*nosotrxs*/
   
@@ -203,6 +242,4 @@
 @media only screen and (max-width: 320px) {
     .nosotrxs .navlist__1 {
       background-color: #fff; }
-    .nosotrxs .navlist__1 a {
-      color: $color-grayblack; }
     }
