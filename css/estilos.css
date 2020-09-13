@@ -91,7 +91,7 @@ Puede verse aplicado en las líneas
       color: #bb41f1;
       background-color: #fff;
       box-sizing: border-box;
-      padding: 1rem 2rem; } }
+      padding: 0rem 2rem; } }
 
 /*submenu*/
 .sub_menu {
@@ -197,7 +197,7 @@ ul li:hover ul {
       color: #bb41f1;
       background-color: #000;
       box-sizing: border-box;
-      padding: 1rem 2rem; } }
+      padding: 0rem 2rem; } }
 
 .contacto .sub_menu li {
   background-color: #fff; }

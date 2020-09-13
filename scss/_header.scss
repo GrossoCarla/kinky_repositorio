@@ -86,7 +86,7 @@
       color: $color-pink;
       background-color: #fff;
       box-sizing: border-box;
-      padding: 1rem 2rem;} 
+      padding: 0rem 2rem;} 
     }
 
   /*submenu*/
@@ -187,7 +187,7 @@
     grid-area: "tiendanav"; }
 
     @media only screen and (max-width: 320px){
-      .tienda .navlist__1{
+      .tienda .navlist__1 {
         background-color: #fff;}
     }
 
@@ -213,7 +213,7 @@
       color: $color-pink;
       background-color: #000;
       box-sizing: border-box;
-      padding: 1rem 2rem;
+      padding: 0rem 2rem;
     } }
 
 .contacto .sub_menu li {
