@@ -499,7 +499,12 @@ body {
 
 .blog h4{
   @media all and (min-width: 321px) and (max-width: 768px){
-    font-size: 1rem;  
+    position: absolute;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    top: 74px;  
   } 
 }
 
@@ -546,7 +551,6 @@ body {
     }}
   &__popular {
     @media all and (min-width: 321px) and (max-width: 768px) {
-    position: relative;
     left: -6rem;
     }    
   }  
@@ -646,8 +650,10 @@ body {
     } 
     &__popular-span{
       @media all and (min-width: 321px) and (max-width: 768px) {
-        position: relative;
-        top: -23px;
+        position: absolute;
+        color: white;
+        top: 43px;
+        padding-left: 1rem;
       }
     }
   }

@@ -656,7 +656,12 @@ select {
 
 @media all and (min-width: 321px) and (max-width: 768px) {
   .blog h4 {
-    font-size: 1rem; } }
+    position: absolute;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    top: 74px; } }
 
 @media all and (min-width: 321px) and (max-width: 768px) {
   .blog h5 {
@@ -697,7 +702,6 @@ select {
         height: 14rem; } }
   @media all and (min-width: 321px) and (max-width: 768px) {
     .container__popular {
-      position: relative;
       left: -6rem; } }
   .container__popular-span, .container__fecha2 {
     font-size: 0.7rem;
@@ -794,8 +798,10 @@ select {
         opacity: 79%; } }
   @media all and (min-width: 321px) and (max-width: 768px) {
     .container__popular-span {
-      position: relative;
-      top: -23px; } }
+      position: absolute;
+      color: white;
+      top: 43px;
+      padding-left: 1rem; } }
 
 /*Section 1*/
 .blog span {
