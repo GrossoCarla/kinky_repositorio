@@ -499,12 +499,10 @@ body {
 
 .blog h4{
   @media all and (min-width: 321px) and (max-width: 768px){
-    position: absolute;
     padding-left: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
-    top: 74px;  
   } 
 }
 
@@ -601,7 +599,8 @@ body {
       &__higiene-p {
         display: none; }
       &__img1 {
-        height: 10rem; }
+        height: 10rem;
+        padding: 0 1rem 0 1rem;}
       &__popular-span {
         font-size: 1rem;
         position: relative;
@@ -613,16 +612,16 @@ body {
         position: relative;
         margin-left: 0.5rem;
         color: white; }
+      &__popular{
+        top: -90px;
+      }  
       &__img2 {
+        position: absolute;
         height: 13.5rem;
         width: 18rem;
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;}
       &__link, &__link2 {
         display:none;} 
-      &__popular{
-        position: relative;
-        top: -163px;
-      }  
       &__fecha2{
         position: relative;
         top: 99px;
@@ -650,11 +649,23 @@ body {
     } 
     &__popular-span{
       @media all and (min-width: 321px) and (max-width: 768px) {
-        position: absolute;
         color: white;
-        top: 43px;
         padding-left: 1rem;
       }
+    }
+    &__texto-popular{
+      @media all and (max-width: 320px){
+        height: 13.5rem;
+      }
+      @media all and (min-width: 321px) and (max-width: 768px){
+        background-color: $color-grayblack;
+        position: absolute;
+        top: 0px;
+        height: 14rem;
+        opacity: 70%;
+        box-sizing: border-box;
+        padding-top: 3rem;
+      }      
     }
   }
   

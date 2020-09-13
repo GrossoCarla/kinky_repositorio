@@ -656,12 +656,10 @@ select {
 
 @media all and (min-width: 321px) and (max-width: 768px) {
   .blog h4 {
-    position: absolute;
     padding-left: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #fff;
-    top: 74px; } }
+    color: #fff; } }
 
 @media all and (min-width: 321px) and (max-width: 768px) {
   .blog h5 {
@@ -752,7 +750,8 @@ select {
       .container__higiene-p {
         display: none; }
       .container__img1 {
-        height: 10rem; }
+        height: 10rem;
+        padding: 0 1rem 0 1rem; }
       .container__popular-span {
         font-size: 1rem;
         position: relative;
@@ -764,15 +763,15 @@ select {
         position: relative;
         margin-left: 0.5rem;
         color: white; }
+      .container__popular {
+        top: -90px; }
       .container__img2 {
+        position: absolute;
         height: 13.5rem;
         width: 18rem;
         margin-bottom: 1rem; }
       .container__link, .container__link2 {
         display: none; }
-      .container__popular {
-        position: relative;
-        top: -163px; }
       .container__fecha2 {
         position: relative;
         top: 99px;
@@ -798,10 +797,20 @@ select {
         opacity: 79%; } }
   @media all and (min-width: 321px) and (max-width: 768px) {
     .container__popular-span {
-      position: absolute;
       color: white;
-      top: 43px;
       padding-left: 1rem; } }
+  @media all and (max-width: 320px) {
+    .container__texto-popular {
+      height: 13.5rem; } }
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .container__texto-popular {
+      background-color: #363636;
+      position: absolute;
+      top: 0px;
+      height: 14rem;
+      opacity: 70%;
+      box-sizing: border-box;
+      padding-top: 3rem; } }
 
 /*Section 1*/
 .blog span {
